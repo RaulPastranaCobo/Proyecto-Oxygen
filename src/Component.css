@@ -1,0 +1,168 @@
+    .conversion{
+        background-color: rebeccapurple;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 80% auto;
+        grid-template-areas: 
+        "texth1 texth1 texth1" 
+        "selectType selectType swaps"
+        "amount amount amount"
+        "save result result"
+        "saved saved saved"
+        ;
+        border-radius: 5%;
+        font-size: 1.5em;
+        
+    }
+    
+    .texth1{
+        grid-area: texth1;
+        color: white;
+        margin-left: 10px;
+    
+    }
+    
+    .selectType{
+        appearance: none;
+        grid-area: selectType;
+        border: 0;
+      outline: 0;
+      box-shadow: none;
+        
+    }
+    
+    select{
+        text-align: left;
+        width: 84%;
+        margin-left: 10px;
+        background-color: transparent;
+        border-color: white;
+        border-width: 5px;
+        color: white;
+    }
+
+    option{
+        background-color: rebeccapurple;
+    }
+    
+    input{
+        width: 70%;
+        text-align: end;
+        margin-left: 10px;
+        background-color: transparent;
+        border-color: white;
+        border-width: 5px;
+        color: white;
+    }
+    
+    .amount{
+        grid-area: amount;
+        display: block;
+        
+        
+    }
+    
+    .result{
+        grid-area: result;
+        color: white;
+    
+    }
+    
+    .swap{
+        grid-area: swaps;
+        margin-right: 10px;
+        
+    }
+    
+    
+    .save{
+        grid-area: save;
+        margin-left: 10px;
+        
+    
+    }
+
+    .saved{
+        
+        
+        grid-area: saved;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    li{
+        display: flex;
+       list-style: none; 
+       width: 90%;
+       margin-top: 10px;
+       height: 2em;
+        background-color: lightcoral;
+        text-align: center;
+        border-radius: 25%;
+        justify-content: center;
+        font-size: 0.8em;
+        align-items: center;
+        
+        
+    
+    }
+
+    button{
+        border:none;
+        text-align: center;
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1.5em;
+        
+    }
+    
+
+
+
+@media (min-width:750px ){
+    .conversion{
+        display: grid;
+        margin:auto;
+        width: 76%;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "texth1 texth1 texth1" 
+        "selectType swaps amount"
+        "save save result"
+        "saved saved saved"
+        ;
+        
+    }
+
+    header{
+        display: block;
+        text-align: center;
+
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        
+    }
+
+    
+
+    .saved{
+        width: 100%;
+        
+    }
+
+    
+    
+    
+
+}
